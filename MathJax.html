@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    displayAlign: "left"
+});
+</script>
+
+</head>
+
+<body>
+    
+    <b>Euler's Number (e)</b>
+    $$
+    \begin{align}
+    e & = \lim_{n \to \infty} (1+\frac{1}{n})^{n} 
+    \hspace{100cm} \\
+    \end{align}
+    
+    
+    \begin{align}
+    e &= \sum_{n=0}^{\infty}\frac{1}{n!}
+    \hspace{100cm} \\
+    \end{align}
+    
+    <b>Factorial</b>
+    \begin{align}
+    n! &= \prod_{k=1}^{n} k
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    \Gamma (z) = \int_{0}^{\infty} x^{z-1} e^{-x}dx \hspace{100cm} \\ 
+    \end{align} 
+    <b>Taylor Series</b>
+    \begin{align}
+    f(x) &= f(a) + f'(a)\frac{(x-a)}{1!}+f''(a) \frac{(x-a)}{2!}+...
+    \hspace{100cm} \\
+    
+    &= \sum_{n=)}^{\infty} f^{(n)}(a) \frac{(x-a)^{n}}{n!}
+    \end{align}
+    
+    <b>5 Common Maclaurin Series (Taylor Series when a = 0)</b>
+    \begin{align}
+    e^x = \sum_{n=0}^{\infty} \frac{x^{n}}{n!}  = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}+...
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    \frac{1}{1-x} = \sum_{n=0}^{\infty}x^n = 1 + x + x^2 + x^3 +... |x| < 1
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    sin(x) = \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!}-\frac{x^5}{5!} - \frac{x^7}{7!}+...
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    cos(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!}+\frac{x^4}{4!} - \frac{x^6}{6!}+...
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    arctan(x) = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7}+...
+    \hspace{100cm} \\
+    \end{align}
+    <b>Binomial Distributions</b>
+    \begin{align}
+    \mu _x = np
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    \sigma  = \sqrt{np(1-p)}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    P(x) = \frac{n!}{(n-x)!-x!}p^x q^{n-x}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    P(x) = {n \choose x}p^x q^{n-x}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    P(x) = \frac{e^{- \lambda} \lambda^x}{x!}
+    \hspace{100cm} \\
+    \end{align}
+    <b>Normal Distribution (sample)</b>
+    \begin{align}
+    z = \frac{x - \mu}{{\sigma}}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    \overline{x} = \dfrac{\sum\limits_{i=1}^{n}x_{i}}{n}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+    S^2 =  \dfrac{\sum\limits_{i=1}^{n}(x_{i} - \overline{x})^2}{n-1}
+    \hspace{100cm} \\
+    \end{align}
+    \begin{align}
+   S =  \sqrt { \dfrac{\sum\limits_{i=1}^{n}(x_{i} - \overline{x})^2}{n-1}}
+    \hspace{100cm} \\
+    \end{align}
+    <b>Probability</b>
+    \begin{align}
+    P(A \cap B) = P(A) - P(B)
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+    P(A \cup B) = P(A) + P(B) - P(A \cap B)
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+    P(A|B) =  \textit{P(A given that B has happened)} = \frac{P(A \cap B)}{P(B)}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     P(A|B) = P(A) = \textit{Independent}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     P(A \cap B) = P(A) \cdot P(B) = \textit{Independent}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     P(A \cup B) = P(A) + P(B) = \textit{Disjoint}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     P(A \cap B) = 0 = \textit{Disjoint}
+     \hspace{100cm} \\
+     \end{align}
+    <b>Derivative Rules</b>
+    \begin{align}
+     \frac{d}{dx}[f(x) \pm g(x)] = \frac{d}{dx}[f(x)] \pm \frac{d}{dx}[g(x)] \textit{   Sum/Difference Rule}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{d}{dx}[k \cdot f(x)] = k /cdot \frac{d}{dx}[f(x)] \textit{   Constant Multiple Rule}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{dy}{dx} = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \textit{   Limit Definition of a Derivative}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{d}{dx}[X^n] = nX^{n-1} \textit{   Power Rule}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{d}{dx}[f(x) \cdot g(x)] = \frac{d}{dx}[f(x)]g(x)+f(x)\frac{d}{dx}[g(x)] \textit{   Product Rule}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{d}{dx}[\frac{f(x)}{g(x)}] = \frac{\frac{d}{dx}[f(x)]g(x)-f(x) \frac{d}{dx}[g(x)]}{[g(x)]^2} \textit{   Quotient Rule}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \frac{d}{dx}[f(g(x))] = f'(g(x))g'(x) \textit{   Chain Rule}
+     \hspace{100cm} \\
+     \end{align}
+</body>
+</html>
