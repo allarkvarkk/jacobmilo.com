@@ -12,7 +12,17 @@ MathJax.Hub.Config({
 window.MathJax = {
   loader: {load: ['[tex]/color']},
   tex: {packages: {'[+]': ['color']}}
+  
 };
+MathJax = {
+  tex: {
+    macros: {
+      arcsec: '\\DeclareMathOperator{\\arcsec}{arcsec}\\arcsec',
+      arccsc: '\\DeclareMathOperator{\\arccsc}{arccsc}\\arccsc',
+      arccot: '\\DeclareMathOperator{\\arccot}{arccot}\\arccot'
+    }
+  }
+}
 </script>
 
 </head>
@@ -21,6 +31,9 @@ window.MathJax = {
     
     <b style="color:white">Euler's Number (e)</b>
     
+
+
+
     \begin{align}
     \color{white} e = \color{white} \lim_{n \to \infty} (1+\frac{1}{n})^{n} 
     \hspace{100cm} \\
@@ -224,6 +237,58 @@ window.MathJax = {
      \end{align}
      \begin{align}
      \color{white} \frac{d}{dx}[\cot{(x)}] = - \csc{(x)}
+     \hspace{100cm} \\
+     \end{align}
+     <b style="color:white">Derivative of Inverse Trigonometric Functions</b>
+
+
+     \begin{align}
+     \color{white} \frac{d}{dx}[\arcsin(x)] = \frac{1}{\sqrt{1-x^{2}}} \text{ },x \neq \pm 1
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \frac{d}{dx}[\arccos(x)] = - \frac{1}{\sqrt{1-x^{2}}} \text{ }, x \neq \pm 1
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \frac{d}{dx}[\arctan(x)] = \frac{1}{1+x^{2}}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \frac{d}{dx}[\text{arccot}(x)] = - \frac{1}{1+x^{@}}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \frac{d}{dx}[\text{arcsec}(x)] = \frac{1}{x \sqrt{x^{2}-1}} \text{ }, x \neq \pm 1, 0
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \frac{d}{dx}[\text{arccsc}(x)] = - \frac{1}{x \sqrt{x^{2}-1}} \text{ }, x \neq \pm 1,0
+     \hspace{100cm} \\
+     \end{align}
+     <b style="color:white">Hyperbolic Functions</b>
+     \begin{align}
+     \color{white} \sinh(x) = \frac{e^{x} - e^{-x}}{2}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \cosh(x) = \frac{e^{x} +e^{-x}}{2}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \text{csch}(x) = \frac{1}{\sinh(x)}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \text{sech}(x) = \frac{1}{\cosh(x)}
+     \hspace{100cm} \\
+     \end{align}
+     \begin{align}
+     \color{white} \coth(x) = \frac{\cosh(x)}{\sinh(x)}
      \hspace{100cm} \\
      \end{align}
 </body>
